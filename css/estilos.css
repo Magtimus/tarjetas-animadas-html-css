@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    background: #54007c;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.title font{
+    font-weight: 100;
+}
+
+.container__cards{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    perspective: 900px;
+}
+
+.card{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    padding-bottom: 20px;
+    transition: all 600ms ease;
+    
+    transform: rotateX(40deg) scale(0.7);
+    box-shadow: 0px 20px 50px -10px #000;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: rotateX(0deg) scale(1) translateY(10px);
+}
+
+.card__header{
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+}
+
+.card__cover{
+    width: 100%;
+}
+
+.card__cover img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    padding: 20px;
+}
+
+.c1{
+    background: #1f9fb8;
+}
+
+.c2{
+    background: #c1b521;
+}
+
+.c3{
+    background: #942625;
+}
+
+
+.specifications{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.specifications h2{
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.specifications h3{
+    margin-top: 10px;
+}
+
+hr{
+    border: none;
+    width: 250px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.specifications h3 font{
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px){
+   
+    .container__cards{
+        perspective: none;
+        flex-wrap: wrap;
+    }
+    
+    .card{
+        max-width: 290px;
+        margin: 20px;
+        transform: scale(1);
+    }
+    
+    .card:hover{
+        transform: translateY(0px) scale(1.08);
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    
+    .card{
+        max-width: 350px;
+        margin: 20px;
+        transform: translateY(0deg) scale(1);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
